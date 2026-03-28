@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact • Matcha x Roast</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-nav"><div class="container nav-inner"><a class="brand" href="./index.html">MATCHA <span>x ROAST</span></a><nav class="nav-links"><a href="./index.html">Home</a><a href="./menu.html">Menu</a><a href="./story.html">Our Story</a><a href="./catering.html">Catering</a><a class="active" href="./contact.html">Contact</a></nav></div></header>
+
+  <main class="container section">
+    <h1 class="serif">Contact</h1>
+    <p class="lead">Let’s build your daily ritual or your next event menu.</p>
+
+    <div class="grid-2">
+      <article class="card">
+        <h2>General</h2>
+        <p><strong>Instagram:</strong> @matchaxroast</p>
+        <p><strong>Email:</strong> hello@matchaxroast.com</p>
+        <p><strong>City:</strong> Miami, Florida</p>
+      </article>
+
+      <article class="card">
+        <h2>Event Inquiry Form</h2>
+        <form class="intake-form" action="mailto:hello@matchaxroast.com" method="post" enctype="text/plain">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Event Type
+            <select name="event_type" required>
+              <option value="">Select one</option>
+              <option>Corporate Event</option>
+              <option>Brand Activation</option>
+              <option>Private Party</option>
+              <option>Wedding</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <div class="form-row">
+            <label>
+              Date
+              <input type="date" name="event_date" required />
+            </label>
+            <label>
+              Time
+              <input type="time" name="event_time" required />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Guest Count
+              <input type="number" name="guest_count" min="1" placeholder="e.g. 75" required />
+            </label>
+            <label>
+              Service Focus
+              <select name="service_focus" required>
+                <option value="">Choose</option>
+                <option>Matcha</option>
+                <option>Coffee</option>
+                <option>Both</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Location
+            <input type="text" name="location" placeholder="Miami neighborhood or venue" required />
+          </label>
+
+          <label>
+            Notes
+            <textarea name="notes" rows="4" placeholder="Share any details, preferences, or brand requests."></textarea>
+          </label>
+
+          <button class="btn primary" type="submit">Send Inquiry</button>
+          <p class="small" style="margin-top:10px;">Submitting opens your email app with all details prefilled to hello@matchaxroast.com.</p>
+        </form>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
