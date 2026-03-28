@@ -1,77 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lumi Lash & Brow Studio | Miami</title>
-  <meta name="description" content="Luxury lash and brow studio in Miami. See real client testimonials and book your appointment online." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumi Lash Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="logo" href="./index.html">LUMI <span>LASH & BROW</span></a>
-      <div class="nav-cta">
-        <a href="./portfolio.html">Portfolio</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="./book.html" class="btn small">Book Now</a>
-      </div>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero container">
-      <div>
-        <p class="kicker">Miami, FL • Lash & Brow Specialists</p>
-        <h1>Natural, lifted results that still look like you.</h1>
-        <p class="sub">Premium lash sets, brow shaping, and brow lamination in a calm, luxury studio environment.</p>
-        <div class="hero-actions">
-          <a class="btn" href="./book.html">Book Appointment</a>
-          <a class="btn ghost" href="./portfolio.html">View Portfolio</a>
+    <!-- NAV -->
+    <nav>
+        <a href="index.html" class="nav-logo">LUMI LASH STUDIO</a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="nails.html">Nails</a></li>
+                    <li><a href="lashes.html">Lashes</a></li>
+                    <li><a href="permanent.html">Permanent Makeup</a></li>
+                </ul>
+            </li>
+            <li><a href="#location">Visit</a></li>
+            <li><a href="#booking">Book Now</a></li>
+        </ul>
+        <button class="nav-hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <p class="hero-tagline">Nails · Lashes · Beauty</p>
+            <h1>Where Beauty<br>Becomes <em>Art</em></h1>
+            <p class="hero-sub">A luxury studio experience, curated for you.</p>
+            <a href="#booking" class="hero-cta">Book Your Appointment</a>
         </div>
-      </div>
-      <div class="hero-card">
-        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1200&q=80" alt="Beauty close-up" />
-        <div class="hero-stats">
-          <div><strong>4.9★</strong><span>Average Client Rating</span></div>
-          <div><strong>1,200+</strong><span>Appointments Completed</span></div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
         </div>
-      </div>
     </section>
 
-    <section id="services" class="section container">
-      <h2>Signature Services</h2>
-      <div class="cards">
-        <article class="card"><h3>Classic Lash Set</h3><p>Soft, natural enhancement for everyday elegance.</p><span>$120+</span></article>
-        <article class="card"><h3>Hybrid / Volume Lashes</h3><p>Custom fullness from airy to glam based on your eye shape.</p><span>$145+</span></article>
-        <article class="card"><h3>Brow Lamination + Tint</h3><p>Lift, sculpt, and define for a polished, fuller brow look.</p><span>$95+</span></article>
-      </div>
-    </section>
+    <!-- SERVICES OVERVIEW -->
+    <section id="services">
+        <p class="section-label fade-in">Our Services</p>
+        <h2 class="section-title fade-in">Crafted With Care</h2>
+        <p class="section-subtitle fade-in">Premium services tailored to enhance your natural beauty.</p>
 
-    <section id="testimonials" class="section alt">
-      <div class="container">
-        <h2>Client Love</h2>
-        <div class="testimonial-wrap">
-          <button class="arrow" id="prev">‹</button>
-          <div class="testimonial" id="quoteBox">
-            <p id="quoteText">“Best lash retention I’ve had in Miami. The studio is spotless and my brows finally look symmetrical.”</p>
-            <span id="quoteName">— Ashley R.</span>
-          </div>
-          <button class="arrow" id="next">›</button>
+        <div class="services-overview">
+            <a href="nails.html" class="service-card fade-in">
+                <div class="service-card-icon">✦</div>
+                <h3>Nails</h3>
+                <p>From classic manicures to intricate nail art — every set is a masterpiece.</p>
+                <span class="service-card-link">View Services →</span>
+            </a>
+            <a href="lashes.html" class="service-card fade-in">
+                <div class="service-card-icon">✦</div>
+                <h3>Lashes</h3>
+                <p>Wispy, natural, or dramatic — tailored to complement your unique eye shape.</p>
+                <span class="service-card-link">View Services →</span>
+            </a>
+            <a href="permanent.html" class="service-card fade-in">
+                <div class="service-card-icon">✦</div>
+                <h3>Semi-Permanent Makeup</h3>
+                <p>Wake up flawless. Subtle enhancements that look effortlessly natural.</p>
+                <span class="service-card-link">View Services →</span>
+            </a>
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>Lumi Lash & Brow Studio • Miami, FL • Instagram: @lumilashbrow</p>
-    </div>
-  </footer>
+    <!-- LOCATION -->
+    <section id="location" class="bg-dark">
+        <p class="section-label fade-in">Find Us</p>
+        <h2 class="section-title fade-in">Visit the Studio</h2>
+        <p class="section-subtitle fade-in">Walk-ins welcome. Appointments preferred.</p>
 
-  <script src="./script.js"></script>
+        <div class="location-grid">
+            <div class="location-info fade-in">
+                <h3>Lumi Lash Studio</h3>
+                <div class="location-detail">
+                    <p class="label">Address</p>
+                    <p class="value">1234 Collins Avenue, Suite 200<br>Miami Beach, FL 33139</p>
+                </div>
+                <div class="location-detail">
+                    <p class="label">Hours</p>
+                    <p class="value">
+                        Monday – Friday: 10am – 7pm<br>
+                        Saturday: 10am – 6pm<br>
+                        Sunday: By appointment only
+                    </p>
+                </div>
+                <div class="location-detail">
+                    <p class="label">Contact</p>
+                    <p class="value">
+                        (305) 555-0123<br>
+                        hello@lumilashstudio.com
+                    </p>
+                </div>
+            </div>
+            <div class="map-placeholder fade-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14361.509421658498!2d-80.19362!3d25.76168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6823b6e27df%3A0xc7e16d0e63e2b8b3!2sMiami%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING CTA -->
+    <section id="booking" class="booking">
+        <div class="booking-content fade-in">
+            <h2>Ready to Feel <em>Beautiful</em>?</h2>
+            <p>Book your appointment today via WhatsApp.</p>
+            <a href="https://wa.me/13055550123?text=Hi!%20I'd%20like%20to%20book%20an%20appointment." class="btn-book" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Book on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">LUMI LASH STUDIO</div>
+        <div class="footer-links">
+            <a href="nails.html">Nails</a>
+            <a href="lashes.html">Lashes</a>
+            <a href="permanent.html">Permanent Makeup</a>
+            <a href="#location">Visit</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2026 Lumi Lash Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
