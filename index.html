@@ -306,9 +306,9 @@
 
                 <form
                     class="contact-form"
-                    action="mailto:hello@lightbeamstudio.com"
-                    method="post"
-                    enctype="text/plain"
+                    id="contact-form"
+                    action="https://formspree.io/f/mlgojzvj"
+                    method="POST"
                 >
                     <div class="form-grid">
                         <label>
@@ -359,6 +359,10 @@
                         Request Quote
                     </button>
                 </form>
+                <div id="form-success" style="display:none; text-align:center; padding:2rem 0;">
+                    <h3 style="color:#4ade80; margin-bottom:0.5rem;">✅ Message sent!</h3>
+                    <p style="color:#ccc;">Thanks for reaching out — we'll get back to you within 24 hours.</p>
+                </div>
             </div>
         </section>
 
@@ -404,6 +408,34 @@
                     hamburger.classList.remove("open");
                     navLinks.classList.remove("open");
                 });
+            });
+            // Contact form — AJAX submit
+            const form = document.getElementById("contact-form");
+            const successMsg = document.getElementById("form-success");
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const btn = form.querySelector('button[type="submit"]');
+                btn.disabled = true;
+                btn.textContent = "Sending...";
+                try {
+                    const res = await fetch(form.action, {
+                        method: "POST",
+                        body: new FormData(form),
+                        headers: { Accept: "application/json" },
+                    });
+                    if (res.ok) {
+                        form.style.display = "none";
+                        successMsg.style.display = "block";
+                    } else {
+                        btn.disabled = false;
+                        btn.textContent = "Request Quote";
+                        alert("Something went wrong — please try again.");
+                    }
+                } catch {
+                    btn.disabled = false;
+                    btn.textContent = "Request Quote";
+                    alert("Something went wrong — please try again.");
+                }
             });
         </script>
     </body>
