@@ -19,6 +19,8 @@ body {
     color: var(--text);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* ═══════════════════ NAV ═══════════════════ */
@@ -607,7 +609,7 @@ footer p { color: rgba(255,255,255,0.2); font-size: 0.75rem; }
         display: none;
         position: fixed;
         top: 0; left: 0; right: 0; height: 100vh;
-        background: rgba(10,10,10,0.98);
+        background: rgba(10,10,10,0.70);
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -647,7 +649,7 @@ footer p { color: rgba(255,255,255,0.2); font-size: 0.75rem; }
 
     section { padding: 5rem 1.5rem; }
     .services-overview { grid-template-columns: 1fr; }
-    .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 0.35rem; }
+    .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 0.3rem; }
     .location-grid { grid-template-columns: 1fr; }
     .map-placeholder { aspect-ratio: 16/9; }
     .booking { padding: 6rem 1.5rem; }
