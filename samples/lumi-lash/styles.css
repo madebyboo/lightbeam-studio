@@ -609,7 +609,7 @@ footer p { color: rgba(255,255,255,0.2); font-size: 0.75rem; }
         display: none;
         position: fixed;
         top: 0; left: 0; right: 0; height: 100vh;
-        background: rgba(10,10,10,0.70);
+        background: rgba(10,10,10,0.55);
         flex-direction: column;
         align-items: center;
         justify-content: center;
